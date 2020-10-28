@@ -75,4 +75,5 @@ int main()
     if else (ika == 16){  
       cout << "olet 16"  
 
+
 }
