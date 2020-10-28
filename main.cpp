@@ -43,10 +43,36 @@ int main()
 
     cout << "leveys jakojäännös: "<<alueen_pituus%laatta_pituus<<endl;
 
+    string autoja[]={"BMW" , "Audi" , "Toyota" , "Nissan" , "Ford" , ""};  
+
+    cout << autoja[0]<< endl;
+
+    autoja[1]="Saab";  
+
+    cout << autoja[1]<< endl;  
+
+    autoja[5]="Volvo";  
+
+    cout << autoja[5];  
+
+    if(ika==16){  
+    {cout<<"Olet 16 vuotias";  
+    }  
+
+    if(ika<16){ 
+    }  
+    cout << "olen nuorempi kuin 16";
+    }  
     
+    if (ika>16){  
+    }  
+    cout << "olen vanhempi kuin 16";  
+    }  
 
-
-
-    
+    if(ika != 16){  
+      cout << "et ole 16";  
+    }  
+    if else (ika == 16){  
+      cout << "olet 16"  
 
 }
