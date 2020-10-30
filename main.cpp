@@ -7,7 +7,15 @@ on meinaa
 
 #include <iostream>
 
-using namespace std;
+using namespace std;  
+
+void kontrollinSiirtoEsimerkki(){  
+  cout<<"kävin täällä" << endl;
+
+}  
+void kontrollinSiirtoParametrilla(string etunimi){  
+  cout<<etunimi;  
+}
 
 int main()
 {
@@ -43,7 +51,7 @@ int main()
 
     cout << "leveys jakojäännös: "<<alueen_pituus%laatta_pituus<<endl;
 
-    string autoja[]={"BMW" , "Audi" , "Toyota" , "Nissan" , "Ford" , ""};  
+    string autoja[8]={"BMW" , "Audi" , "Toyota" , "Nissan" , "Ford" , ""};  
 
     cout << autoja[0]<< endl;
 
@@ -51,29 +59,46 @@ int main()
 
     cout << autoja[1]<< endl;  
 
-    autoja[5]="Volvo";  
+    autoja[5]="Volvo";   
 
     cout << autoja[5];  
 
     if(ika==16){  
-    {cout<<"Olet 16 vuotias";  
-    }  
+    cout << "Olet 16 vuotias" << endl;  
+    }
 
-    if(ika<16){ 
-    }  
+    if(ika<16){   
     cout << "olen nuorempi kuin 16";
-    }  
+    }   
     
-    if (ika>16){  
-    }  
+    if(ika>16){    
     cout << "olen vanhempi kuin 16";  
-    }  
+    }     
 
-    if(ika != 16){  
+    if (ika != 16){  
       cout << "et ole 16";  
     }  
-    if else (ika == 16){  
-      cout << "olet 16"  
+
+    else if (ika == 16){  
+      cout << "olet 16" << endl;  
+    }  
+    cout << endl;  
+    int i=1; 
+    while(i<5){   
+      cout<<"while loopin kierros nro: "<<i<<endl;  
+       i=i+1;   
+    }  
+    cout<<endl;  
+    for(int i=1; i<5; i++){  
+      cout << "For loopin kierros nro: " << i << endl;  
+    }
+    kontrollinSiirtoEsimerkki();  
+     
+    kontrollinSiirtoParametrilla("Saku");   
+
+
+
+
 
 
 }
